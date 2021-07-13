@@ -1,0 +1,2 @@
+rootProject.name = "FaceBuddy-V2.0"
+include ':app'

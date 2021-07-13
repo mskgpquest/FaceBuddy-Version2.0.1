@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar_layout_find_people" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar_contacts" android:layout_width="match_parent" android:layout_height="60dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textColor="@android:color/white" android:id="@+id/search_user_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:hint="Search here ..." android:drawableLeft="@drawable/search" android:layout_centerVertical="true" android:textAlignment="center"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/find_friend_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/appbar_layout_find_people"/>
+</RelativeLayout>
